@@ -1,105 +1,121 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>THRIVE Influences</title>
-    <link rel="stylesheet" href="css/main.css">
-    <script src="https://kit.fontawesome.com/ff530799d1.js" crossorigin="anonymous"></script>
+<head>
+<meta charset="utf-8">
+<title>THRIVE Influences</title>
+<link rel="stylesheet" href="css/main.css">
+<script src="https://kit.fontawesome.com/ff530799d1.js" crossorigin="anonymous"></script>
+<style>
+body{
+  background-color: white;
+}
+.item1 { grid-area: header;
+  color: Black;
+  font-family:times;
+  background-color: white;
+  font-size: 40px;
+  text-align: center;
+}
+.item2 { grid-area: menu;
+text-align: left;
+color:white;
+font-size: 16px;
+padding-top: 50px;
+}
+.item3 { grid-area: main;
+text-align: center;
+color: black;
+background-color: white;
+font-size: 20px;
 
-	<style>
-		table {
-			border: thin solid;
-		}
-		h1{
-      		text-align: left;
-      		color: orangered;
-      		font-family:sans-serif;
-      		background-color: deepskyblue;
-      		font-size: 40px;
-			padding-left: 30px;
-    		}
-			h2 {
-			 text-align: center;
-      		color: orangered;
-      		font-family:sans-serif;
-      		background-color: white;
-      		font-size: 40px;
-			padding-left: 30px;
-		}
+}
+.item4 { grid-area: right;
+background-color: white;
+padding: 1em;
+}
+.item5 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'footer footer footer footer footer footer';
+  grid-gap: 10px;
+  background-color: black;
+  padding: 10px;
+}
+
+.grid-container > div {
+}
+
+.item2 a:hover {
+     color: black;
+     background-color: white;
+   }
+a:link, a:visited {
+     background-color: black;
+     color: white;
+     padding: 15px 25px;
+     text-align: center;
+     text-decoration: none;
+     display: inline-block;
+   }
+.item2 a.active {
+    background-color: white;
+    color: black;
+  }
+h1 {
+  text-align: center;
+}
+footer {
+  display: block;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="grid-container">
+  <div class="item1">
+    <h1>INFLUENCES</h1>
+  </div>
+  <div class="item2">
 
 
-		body {
-      		background-image: url("images/Albert.jpg");
-			background-repeat: no-repeat;
-			background-position: right;
-			background-color: black;
-		}
-		.sidebar a:hover {
-  				color: orangered;
-				  background-color: white;
-				}
-		a:link, a:visited {
-  				background-color: black;
-  				color: #00c9f0;
-  				padding: 15px 25px;
-  				text-align: center;
-  				text-decoration: none;
-  				display: inline-block;
-				}
-        a.active {
-         background-color: white;
-         color: #00c9f0;
-       }
-	  </style>
+    <ul>
 
-  </head>
+<a href="index.html" target="_blank"><i class="fas fa-home"> Home</i></a>
+<br>
+<a href="about.html" target="_blank"><i class="fas fa-bullhorn"> About</i></a>
+<br>
+<a href="artist.html" target="_blank"><i class="fas fa-icons"> Artist</i></a>
+<br>
+<a href="businesses.html" target="_blank"><i class="fas fa-project-diagram"> Businesses</i></a>
+<br>
+<a href="influences.html" class="active"><i class="fas fa-fist-raised"> Influences</i></a>
+<br>
 
+    </ul>
+  </div>
 
- <body>
-
-		<div class="sidebar">
-
-				<h1><b>T H R I V E</b></h1>
-
-			<ul>
-
-				<li><a href="index.html" target="_blank"><i class="fas fa-home"> Home</i></a></li>
-
-				<li><a href="about.html" target="_blank"><i class="fas fa-bullhorn"> About</i></a></li>
-
-				<li><a href="artist.html" target="_blank"><i class="fas fa-icons"> Artist</i></a></li>
-
-				<li><a href="businesses.html" target="_blank"><i class="fas fa-project-diagram"> Businesses</i></a></li>
-
-				<li><a href="influences.html" class="active"><i class="fas fa-fist-raised"> Influences</i></a></li>
-
-			</ul>
-
-	 	</div>
- <div class="text-section">
-  <h2> Influences</h2>
-<table style="width:100%">
-  <tr>
-    <th>Name</th>
-    <th>Influence</th>
-  </tr>
-  <tr>
-    <td>María Izquierdo </td>
-    <td>First female painter with a solo exhibit in the US.</td>
-  </tr>
-  <tr>
-    <td>Paola Longoria</td>
-    <td>Best female racquetball player in the world and has won eight national championships, three world titles, three gold medals</td>
-  </tr>
-	  <tr>
-    <td>Lydia Cacho</td>
-    <td>A writer, activist, and feminist dedicated to human rights</td>
-  </tr>
-</table>
-	 <br>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consectetur dolor in velit condimentum vulputate. Vestibulum nec urna purus. Nunc sed dolor libero. Nam aliquam tincidunt pulvinar. Vivamus ut maximus metus. Duis pellentesque tristique sapien vel sagittis. Cras semper, odio sit amet hendrerit vestibulum, urna elit consequat nisi, quis efficitur neque sem in erat. Suspendisse iaculis metus mi, ut lacinia sapien vestibulum id. Ut bibendum, diam vel sollicitudin iaculis, nisi purus lacinia augue, vitae dignissim nisl purus at leo. Suspendisse placerat, eros in feugiat rutrum, est enim varius dui, vehicula cursus risus elit sed ante. Nam velit lacus, dignissim quis semper nec, sagittis nec mi. Aenean id ipsum ac felis congue consectetur in nec dolor. Morbi eget ornare ex. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam tellus odio, venenatis eget pellentesque eget, pulvinar sit amet tellus.</p>
-
-	 </div>
-  </body>
-
+  <div class="item3">
+    <br>
+    <br>
+    <img src="images/albert.jpg" alt="albert the immigrant">
+    <br>
+    <br>
+  </div>
+  <div class="item4">
+    <h2>Lorem ipsum dolor sit</h2>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis odio, sed! Vitae tempore iusto pariatur quasi odit neque sit quibusdam unde similique et! Quaerat animi, aliquam officia ea, vero nam eaque facere architecto cumque libero! Recusandae, corporis rerum iure. Eos nemo sapiente eum, odio hic maiores porro molestias architecto eveniet earum quisquam dignissimos, reiciendis quae culpa similique saepe vero laudantium aspernatur nisi! Incidunt neque accusantium dicta debitis, cupiditate vel eligendi, impedit? Incidunt magni nostrum atque repellendus! Magnam maiores, accusamus aspernatur sint tempora commodi optio minus, aperiam praesentium officia dicta itaque deleniti, quasi! Recusandae excepturi aspernatur facilis itaque sapiente magni earum.
+    </p>
+  </div>
+  <div class="item5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas explicabo soluta placeat, tenetur quasi. Corrupti eius veritatis, id voluptatum minima.</div>
+</div>
+<footer>
+  Thanks For Visiting!
+</footer>
+</body>
 </html>
