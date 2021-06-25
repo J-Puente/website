@@ -7,33 +7,32 @@
 <script src="https://kit.fontawesome.com/ff530799d1.js" crossorigin="anonymous"></script>
 <style>
 body{
-  background-color: white;
+  background-color: black;
 }
-.item1 { grid-area: header;
-  color: Black;
-  font-family:times;
+.item1 {
+  grid-area: header;
   background-color: white;
-  font-size: 40px;
   text-align: center;
 }
-.item2 { grid-area: menu;
-text-align: left;
-color:white;
-font-size: 16px;
-padding-top: 50px;
+.item2 {
+grid-area: menu;
+font-size: 18px;
+padding-top: 20px;
 }
 .item3 { grid-area: main;
-text-align: center;
-color: black;
-background-color: white;
 font-size: 20px;
-
 }
 .item4 { grid-area: right;
-background-color: white;
+font-size: 16px;
+color:black;
+text-align: left;
 padding: 1em;
 }
-.item5 { grid-area: footer; }
+.item5 { grid-area: footer;
+color:black;
+text-align: center;
+padding: 1em;
+}
 
 .grid-container {
   display: grid;
@@ -42,7 +41,7 @@ padding: 1em;
     'menu main main main right right'
     'footer footer footer footer footer footer';
   grid-gap: 10px;
-  background-color: black;
+  background-color: white;
   padding: 5px;
 }
 
@@ -50,26 +49,33 @@ padding: 1em;
 }
 
 .item2 a:hover {
-     color: black;
-     background-color: white;
+     color: white;
+     background-color: black;
    }
 a:link, a:visited {
-     background-color: black;
-     color: white;
+     background-color: white;
+     color: black;
      padding: 15px 25px;
      text-align: center;
      text-decoration: none;
      display: inline-block;
    }
 .item2 a.active {
-    background-color: white;
-    color: black;
+    background-color: Black;
+    color: white;
   }
-h1 {
-  text-align: center;
-}
+  h1 {
+    text-align: center;
+    font-family: ivypresto-headline, serif;
+  font-weight: 700;
+  font-style: normal;
+  }
+  h2 {
+    text-align: center;
+  }
 footer {
   display: block;
+  color: white;
   text-align: center;
 }
 </style>
@@ -79,6 +85,7 @@ footer {
 <div class="grid-container">
   <div class="item1">
     <h1>BUISNESSES</h1>
+    <hr>
   </div>
   <div class="item2">
 
